@@ -14,6 +14,11 @@ class KMP{
     KMP(string str){
         this->str=str;
     }
+    
+    KMP(string str, string patt){
+        this->str=str;
+        search(patt);
+    }
 
     void PrefixTable(string patt){
         int j=0;
